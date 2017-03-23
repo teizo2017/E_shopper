@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="EmmaEcommercePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.emmaoyoita.eshop.models.dto.BillingDetail</class>
+    <class>com.emmaoyoita.eshop.models.dto.Brand</class>
+    <class>com.emmaoyoita.eshop.models.dto.ShoppingCart</class>
+    <class>com.emmaoyoita.eshop.models.dto.InvoiceDetail</class>
+    <class>com.emmaoyoita.eshop.models.dto.ProductCategory</class>
+    <class>com.emmaoyoita.eshop.models.dto.Wishlist</class>
+    <class>com.emmaoyoita.eshop.models.dto.Product</class>
+    <class>com.emmaoyoita.eshop.models.dto.Customer</class>
+    <class>com.emmaoyoita.eshop.models.dto.Invoice</class>
+    <class>com.emmaoyoita.eshop.models.dto.State</class>
+    <class>com.emmaoyoita.eshop.models.dto.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/emma_store?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
